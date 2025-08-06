@@ -1,7 +1,7 @@
-const sentence = "The Fiji tropical dry forests are a tropical dry forest ecoregion in Fiji.";
+const sentence = "The Fiji tropical dry forests are a tropical dry forest ecoregion in Fiji";
 
 const getLongestWord = (string) => {
-    const wordsArr = string.split(" "); // impart propozitia in cuvinte
+    const wordsArr = string.replace('.', '').split(" "); // impart propozitia in cuvinte
 
     let maxLength = wordsArr[0].length;
     let longestIndex = 0;
@@ -17,3 +17,4 @@ const getLongestWord = (string) => {
 }
 
 const longest = getLongestWord(sentence);
+console.log('longest :>> ', longest);
